@@ -82,6 +82,14 @@ $ mas search Xcode
 [...]
 ```
 
+Another way to find the identifier for an app is to
+
+1. Find the app in the Mac App Store
+2. Select `Share` > `Copy Link`
+3. Grab the identifier from the string, e.g. for Xcode,
+   [https://apps.apple.com/us/app/xcode/id497799835?mt=12](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+   has identifier `497799835`
+
 To install or update an application simply run `mas install` with an
 application identifier:
 
@@ -205,7 +213,7 @@ apps, and is not yet able to install or update them. [#321](https://github.com/m
 
 If you see this error, it's probably because you haven't installed the app through the App Store yet.
 See [#46](https://github.com/mas-cli/mas/issues/46#issuecomment-248581233).
-> This redownload is not available for this Apple ID either because it was bought by a different user of the
+> This redownload is not available for this Apple ID either because it was bought by a different user or the
 > item was refunded or cancelled.
 
 If `mas` doesn't work for you as expected (e.g. you can't update/download apps), run `mas reset` and try again.
